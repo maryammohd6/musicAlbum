@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MUSIC</title>
+</head>
+<body background="forpage2.png">
+<center><h1 style="font-size:53px"; ><font color="#00008B";>MY MUSIC PLAYER</h1></center>
+<center><p style="font-size:25px";><b><u>Here are my favorite audio files:</u></b></p></center>
+
+
+<center><img src="btr.jpeg" width="50" height="50">
+	<audio controls>
+  <source src="Big Time Rush - Any Kind of Guy.mp3" type="audio/mpeg">	
+</audio><p><b>BIG TIME RUSH - Any Kind of Guy</p></b>
+</center>
+
+<center><img src="bruno.jpg" width="50" height="50">
+	<audio controls>
+	<source src="Bruno_Mars_When_I_Was_Your_Man.mp3" type="audio/mpeg">
+</audio><p><b>BRUNO MARS - When I Was Your Man</p></b>
+</center>
+
+<center><img src="nikita.jpg" width="50" height="50">
+	<audio controls>
+	<source src="I transform into Nikita Dragun (with Nikita Dragun).mp3" type="audio/mpeg">
+</audio><p><b>NIKITA DRAGUN - I transform to Nikita</p></b>
+</center>
+
+<center><img src="kardash.jpg" width="50" height="50">
+	<audio controls>
+    <source src="Keeping_up_with_the_Kardashian_s_intro-leEkoSgGG4c.mp3" type="audio/mpeg">
+</audio><p><b>Keeping up with the Kardashians - Opening Theme</p></b>
+</center>
+
+<center><img src="legend.png" width="50" height="50">
+	<audio controls>
+    <source src="The Legend of Blue Sea Episode 1 with English Subtitles.mp3" type="audio/mpeg">
+</audio><p><b>Legend of the Blue Sea - The Missing Memories</p></b>
+</center><br>
+<br>
+<br>
+<br>
+<center><h2><u>Here are my favourite video files:</u></h2></center>
+
+<center><p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/gwLKAq9PlsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><b>Julia Michaels - If You Need Me</b>
+</p></center>
+
+<!--OR  
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/gwLKAq9PlsQ">
+</iframe> 
+!-->
+
+<center><p> 
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/CevxZvSJLk8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><b>Katy Perry - Roar</b>
+</p></center>
+
+<center><p> 
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/OPf0YbXqDm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><b>Bruno Mars - Uptown Funk</b>
+</p></center>
+
+<center><p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/ZbZSe6N_BXs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><b>Pharrell Williams - Happy</b>
+</p></center>
+
+<center><p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/hT_nvWreIhg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><b>One Republic - Counting Stars</b>
+</p></center><br>
+<br>
+<br>
+<br>
+
+<p><center>To return back the previous page<a href =page1.html > click here.</a></p></center>
+
+
+<style>
+ #div1 {
+ 	  width: 300px;
+  height: 50px;
+  padding: 15px;
+  border: 3px solid orange;
+
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script></p></center>
+</head>
+<body>
+
+<p>Drag a logo into the box</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<a href="https://web.facebook.com/TrendingMusicNow/?ref=py_c"> <img id="logo" src="fb.png" draggable="true" ondragstart="drag(event)" width="60" height="60"></a>
+
+<a href="https://twitter.com/twittermusic/timelines/393773292433072129?lang=en"> <img id="logo" src="twit.jpg" draggable="true" ondragstart="drag(event)" width="60" height="60"></a>
+
+
+</body>
+</html>
